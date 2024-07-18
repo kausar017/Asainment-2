@@ -96,13 +96,13 @@ i{
     background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
 }
 .get-body-title{
-    max-width: 520px;
+    /* max-width: 520px; */
     font-size: 78px;
     font-weight: 900;
     line-height: 40%;
     color: rgb(255, 255, 255);
 }
-.niema-font{
+.miema-font{
     font-family: 'Miama', sans-serif;
     font-size: 8rem;
     font-weight: 400;
@@ -188,8 +188,41 @@ i{
 .card p{
     width: 231px;
 }
+
+
+/* Run an Extra styels */
+.Run-an-Extra{
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+
+}
+.Run-an-Extra-box h1{
+    max-width: 500px;
+}
+
+.Run-an-Extra-box p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 29px;
+    margin-top: 14px;
+}
+.run-box-img, img{
+    max-width: 366px;
+    border-radius: 18px;
+    background: url(4);
+    justify-content: space-between;
+}
+ /* BMI Calculator section start */
+ 
+ .BMI{
+    max-width: 671px;
+    justify-content: center;
+    align-items: center;
+ }
 /* midea (small divice) style start */
-@media screen and (max-width:580px) {
+@media screen and (max-width:576px) {
     /* navbar responsive */
     .navbar-section{
         flex-direction: column;
@@ -223,7 +256,7 @@ i{
         font-family: 'Miama', sans-serif;
         font-size: 65px;
         font-weight: 400;
-        line-height: 120%;
+        line-height: 95%;
     }
     .get-body-discription{
         width: 274px;
@@ -280,6 +313,8 @@ i{
         font-weight: 600;
         line-height: 35px;
     }
+
+/* habits section style */
     .Habits-section .title{
         margin-top: -160px;
     }
@@ -288,6 +323,24 @@ i{
         grid-template-columns: 1fr;
         row-gap: 35px;
     }
+/* run and extra section responsive */
+.Run-an-Extra{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 30px;
+
+}
+.Run-an-Extra-box .Join-btn{
+    text-align: center;
+    margin-top: 10px;
+}
+.Join-btn .btn{
+   width: 75%;
+}
+.run-box-img, img{
+    margin-top: 20px;
+}
+
 }
 
 /* midea (small divice) style end */
@@ -297,7 +350,7 @@ i{
 
 
 /* midea (mideam divice) style start */
-@media screen and (min-width:576px) and (max-width:992px) {
+@media screen and (min-width:577px) and (max-width:992px) {
     .navbar-section{
         flex-direction: row;
         display: flex;
@@ -320,5 +373,21 @@ i{
     }
 /* bannar resposive */
 
+.get-body{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+/* .get-body-box-2{
+    max-width: 300px;
+    max-height: 450px;
+    justify-content: center;
+    } */
+
+/* habits section style */
+.Habits-card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 35px;
+}
 
 }
