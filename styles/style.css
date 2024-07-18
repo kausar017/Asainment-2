@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-
+@import url('https://fonts.cdnfonts.com/css/miama');
 
 /* difold style */
 *{
@@ -8,18 +8,56 @@
     box-sizing: border-box;
 }
 body{
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif;                                    
   font-optical-sizing: auto;
   font-style: normal;
   font-variation-settings:"slnt" 0;
   background-color: rgb(0, 0, 0);
 }
 .container{
-    width: 90%;
+    max-width: 80%;
     margin: 5rem auto;
     border-radius: 1rem;
-    /* border:  1px solid red; */
 }
+/* shered style */
+
+.btn-primary{
+    padding: 16px 40px;
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+    outline: none;
+    border: none;
+    font-size: 18px;
+    color: rgb(255, 255, 255); 
+    cursor: pointer;
+}
+.praiary-font{
+    color: rgb(255, 255, 255);
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 120%;
+    margin: 13px 0px;
+}
+.primary-discrption-1{
+    max-width: 520px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 29px;
+    margin-top: 44px;
+    align-items: center;
+}
+.primary-discrption-2{
+    max-width: 671px;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 29px;
+    margin-top: 14px;
+    align-items: center;
+}
+
 /* navber section start hear */
 .navbar-section{
     display: flex;
@@ -44,4 +82,243 @@ body{
     line-height: 120%;
     gap: 0 47px;
     cursor: pointer;
+}
+i{
+    display: none;
+   
+}
+
+/* bannar section style  */
+.get-body{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+}
+.get-body-title{
+    max-width: 520px;
+    font-size: 78px;
+    font-weight: 900;
+    line-height: 40%;
+    color: rgb(255, 255, 255);
+}
+.niema-font{
+    font-family: 'Miama', sans-serif;
+    font-size: 8rem;
+    font-weight: 400;
+    line-height: 120%;                                  
+}
+.btn-box{
+    margin-top: 20px;
+}
+.btn-download{
+    padding: 16px 40px;
+    border-radius: 42px;
+    background: transparent;
+    outline: none;
+    border: 1px solid rgb(255, 255, 255);
+    font-size: 18px;
+    color: rgb(255, 255, 255); 
+    cursor: pointer;
+   margin-left: 14px;
+}
+.get-body-box-2{
+    max-width: 349px;
+    max-height: 580px;
+}
+.card-1{
+    text-align: center;
+    max-width: 180px;
+    padding: 17px;
+    color: #fff;  
+    border-radius: 12px; 
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(201, 198, 198, 0.16);
+    background:rgba(48, 48, 48, 0.54);
+    position: relative;
+    left: 231px;
+    top: -430px;
+}
+.card-2{
+    text-align: center;
+    max-width: 180px;
+    padding: 17px 0px;
+    color: #fff;  
+    border-radius: 12px; 
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(201, 198, 198, 0.16);
+    background: rgba(48, 48, 48, 0.54);
+    position: relative;
+    left: -95px;
+    top: -291px;
+}
+.card-2 i{
+    color: red;
+}
+.card-1, .card-2 h4{
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 40px;
+}
+.card-1 p{
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 13px;
+    font-weight: 400;
+}
+
+/* Habits section style */
+.Habits-section{
+    text-align: center;
+}
+.Habits-card{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 54px;
+}
+.card img{
+    border-radius: 50%;
+}
+.card-title{
+    margin: 12px 0px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 120%;
+   color:  rgb(255, 255, 255);
+}
+.card p{
+    width: 231px;
+}
+/* midea (small divice) style start */
+@media screen and (max-width:580px) {
+    /* navbar responsive */
+    .navbar-section{
+        flex-direction: column;
+        display: flex;
+        flex-direction: row;
+        padding: 0px;
+    }
+    .option{
+        display: none;
+    }
+    .hambar{
+
+        color: #f5f0f0;
+    }
+    /* bannar resposive */
+    .get-body{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .get-body-title{
+        max-width: 285px;
+        font-size: 36px;
+        font-weight: 900;
+        line-height: 23%;
+        text-align: left;
+        color: rgb(255, 255, 255);
+        margin-bottom: 20px;
+        letter-spacing: 0%;
+    }
+    .niema-font{
+        font-family: 'Miama', sans-serif;
+        font-size: 65px;
+        font-weight: 400;
+        line-height: 120%;
+    }
+    .get-body-discription{
+        width: 274px;
+        height: 96px;
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        margin-bottom: 28px;
+    }
+   .btn-box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   }
+   .btn-primary, .btn-download{
+        width: 169px;
+        height: 54px;
+        padding: 0%;
+   }
+   .get-body-box-2 img{
+    width: 300px;
+    height: 450px;
+    }
+    .card-1{
+        text-align: center;
+        max-width: 160px;
+        padding: 6px;
+        color: #fff;  
+        border-radius: 12px; 
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(201, 198, 198, 0.16);
+        background: rgba(48, 48, 48, 0.54);
+        position: relative;
+        left: 184px;
+        top: -420px;
+    
+    }
+    .card-2{
+        text-align: center;
+        max-width: 160px;
+        padding: 6px;
+        color: #fff;  
+        border-radius: 12px; 
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(201, 198, 198, 0.16);
+        background: rgba(48, 48, 48, 0.54);
+        position: relative;
+        left: -39px;
+        top: -364px;
+    
+    }
+    .card-1, .card-2 h4{
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 35px;
+    }
+    .Habits-section .title{
+        margin-top: -160px;
+    }
+    .Habits-card{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 35px;
+    }
+}
+
+/* midea (small divice) style end */
+
+
+
+
+
+/* midea (mideam divice) style start */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .navbar-section{
+        flex-direction: row;
+        display: flex;
+        flex-direction: row;
+        padding: 0px;
+    }
+    i{
+        display: none;
+    }
+    .get-body-title{
+        width: 599.05px;
+        height: 282px;
+        font-size: 78px;
+        font-weight: 900;
+        line-height: 100%;
+        text-align: left;
+        color: rgb(255, 255, 255);
+        margin-bottom: 20px;
+        letter-spacing: 0%;
+    }
+/* bannar resposive */
+
+
 }
