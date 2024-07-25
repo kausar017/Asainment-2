@@ -30,6 +30,7 @@ body{
     font-size: 18px;
     color: rgb(255, 255, 255); 
     cursor: pointer;
+    margin-top: 15px;
 }
 .praiary-font{
     color: rgb(255, 255, 255);
@@ -83,6 +84,12 @@ body{
     gap: 0 47px;
     cursor: pointer;
 }
+.option span{
+    background-color: red;
+    padding: 8px 24px;
+    border-radius: 40px;
+}
+
 i{
     display: none;
    
@@ -96,7 +103,7 @@ i{
     background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
 }
 .get-body-title{
-    /* max-width: 520px; */
+    max-width: 520px;
     font-size: 78px;
     font-weight: 900;
     line-height: 40%;
@@ -120,7 +127,7 @@ i{
     font-size: 18px;
     color: rgb(255, 255, 255); 
     cursor: pointer;
-   margin-left: 14px;
+    margin: 15px;
 }
 .get-body-box-2{
     max-width: 349px;
@@ -195,10 +202,13 @@ i{
     display: flex;
     justify-content: center;
     padding: 100px;
+    background-color: rgb(34, 34, 34);
+    justify-content: space-between;
 
 }
-.Run-an-Extra-box h1{
+.Run-an-Extra-box h1, p{
     max-width: 500px;
+    margin: 0 auto;
 }
 
 .Run-an-Extra-box p{
@@ -212,21 +222,142 @@ i{
     max-width: 366px;
     border-radius: 18px;
     background: url(4);
-    justify-content: space-between;
 }
  /* BMI Calculator section start */
- 
  .BMI{
-    max-width: 671px;
-    justify-content: center;
-    align-items: center;
+    max-width: 100%;
  }
+.BMI-title{
+    max-width: 671px;
+    margin: 0 auto;
+    text-align: left;
+    
+ }
+ .BMI-calculator{
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    background: rgb(34, 34, 34);
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    margin-top: 100px;
+    padding: 20px 220px;
+ }
+ .BMI-calculator h4{
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 120%;
+    text-align: left;
+ }
+
+th, td{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 1rem;
+
+ }
+ .your-BMI p{
+   max-width: 570px;
+ }
+.bmi-input input, select{
+    padding: 12px 40px;
+    width: 44%;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.6);
+
+}
+input, select{
+   margin: 5px;
+}
+#activity-factor{
+    width: 90%;
+}
+
+ /* Meet Our Team section styles */
+ .team-section{
+    text-align: center;
+
+ }
+ .images{
+    padding: 55px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+ }
+.our-container-section{
+    position: relative;
+    align-items: center;
+    text-align: left;
+}
+.titel-and-dis{
+    position: absolute;
+    bottom: 14%;
+    left: 17%;
+}
+ .our-container-section  h3{
+    color: #fff;
+    font-size: 2rem;
+ }
+ .our-container-section p{
+    color: rgba(255, 255, 255, 0.6);
+ }
+ .our-container-section img{
+    width: 326px;
+    height: 272px;
+    border-radius: 18px;
+    margin: 20px;
+    background: rgba(0, 0, 0, 0.2),url(image);
+ }
+ /* footer styles */
+ .footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* text-align: center; */
+ }
+ .footer  h1{
+    font-size: 78px;
+    font-weight: 900;
+    color: red;
+    font-style: italic;
+ }
+ .Contact h3{
+    color: #fff;
+    font-size: 2rem;
+
+ }
+ .Contact a{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 10px;
+ }
+ .footer-hr{
+    max-width: 80%;
+    margin: 0 auto;
+}
+.footer-hr hr{
+  opacity: 45%;
+}
+.footer-hr p{
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 30px 0;
+}
 /* midea (small divice) style start */
 @media screen and (max-width:576px) {
     /* navbar responsive */
     .navbar-section{
-        flex-direction: column;
         display: flex;
+        flex-direction: column;
         flex-direction: row;
         padding: 0px;
     }
@@ -252,11 +383,11 @@ i{
         margin-bottom: 20px;
         letter-spacing: 0%;
     }
-    .niema-font{
+    .miema-font{
         font-family: 'Miama', sans-serif;
-        font-size: 65px;
+        font-size: 90px;
         font-weight: 400;
-        line-height: 95%;
+        line-height: 120%;
     }
     .get-body-discription{
         width: 274px;
@@ -279,30 +410,15 @@ i{
    .get-body-box-2 img{
     width: 300px;
     height: 450px;
+    margin-left: 70px;
     }
     .card-1{
-        text-align: center;
-        max-width: 160px;
-        padding: 6px;
-        color: #fff;  
-        border-radius: 12px; 
-        backdrop-filter: blur(20px);
-        border: 1px solid rgba(201, 198, 198, 0.16);
-        background: rgba(48, 48, 48, 0.54);
         position: relative;
-        left: 184px;
+        left: 243px;
         top: -420px;
     
     }
     .card-2{
-        text-align: center;
-        max-width: 160px;
-        padding: 6px;
-        color: #fff;  
-        border-radius: 12px; 
-        backdrop-filter: blur(20px);
-        border: 1px solid rgba(201, 198, 198, 0.16);
-        background: rgba(48, 48, 48, 0.54);
         position: relative;
         left: -39px;
         top: -364px;
@@ -340,8 +456,43 @@ i{
 .run-box-img, img{
     margin-top: 20px;
 }
+/* BMI Calculator Responsive */
+.BMI-calculator{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0px 30px;
+    margin-top: 30px;
+}
+.BMI-title{
+    padding: 0 20px;
+}
+.BMI-calculator h4{
+    margin-top: 20px;
+}
+ .input{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 282px;
+    gap: 12px;
+}
+ /* Meet Our Team section Responsive */
+ .images{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: auto;
+    margin: 0 auto;
+    padding: 0;
+ }
+ /* footer responsive */
+ .footer{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+ }
 
 }
+
 
 /* midea (small divice) style end */
 
@@ -350,16 +501,26 @@ i{
 
 
 /* midea (mideam divice) style start */
-@media screen and (min-width:577px) and (max-width:992px) {
-    .navbar-section{
-        flex-direction: row;
-        display: flex;
-        flex-direction: row;
-        padding: 0px;
+@media screen and (min-width:577px) and (max-width:992px){
+
+    .container{
+        max-width: 100%;
+        margin: 1rem auto;
     }
+    .header{
+      width: 100%;
+      padding: 10px 10px;
+        
+    }
+    .navbar-section{
+        display: flex;
+        margin: 0 auto;
+      }
+
     i{
         display: none;
     }
+
     .get-body-title{
         width: 599.05px;
         height: 282px;
@@ -377,12 +538,6 @@ i{
     display: grid;
     grid-template-columns: 1fr;
 }
-/* .get-body-box-2{
-    max-width: 300px;
-    max-height: 450px;
-    justify-content: center;
-    } */
-
 /* habits section style */
 .Habits-card{
     display: grid;
