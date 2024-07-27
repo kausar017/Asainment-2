@@ -278,6 +278,69 @@ input, select{
     width: 90%;
 }
 
+/* extra challeng section style */
+.challeng-section, .handshake{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #292729;
+    border-radius: 16px;
+}
+
+.handshake p{
+    color: #777777;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.handshake h1{
+    color: #fff;
+    font-size: 2.5rem;
+    max-width: 842px;
+    margin: 0 auto;
+}
+.extra-card{
+    max-width: 70%;
+    margin: 0 auto;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 60px;
+}
+.extra-card img{
+    border-radius: 8px;
+}
+.extra-card .card{
+    max-width: 300px;
+    margin: 0 auto;
+    gap: 10px;
+}
+.extra-card h4{
+    text-align: left;
+    color: #fff;
+    font-size: 1.5rem;
+}
+.extra-card p{
+    text-align: left;
+    color: #777777;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.extra-card a{
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: left;
+}
+.extra-card a:hover{
+    color: #ff0000;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border: 1px solid pink;
+    padding: 5px;
+    border-radius: 8px;
+}
  /* Meet Our Team section styles */
  .team-section{
     text-align: center;
@@ -490,7 +553,17 @@ input, select{
     grid-template-columns: 1fr;
     row-gap: 20px;
  }
-
+ /* extra section style */
+ .extra-card{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+ }
+ .handshake h1{
+    font-size: 2.5rem;
+    max-width: 100%;
+    margin: 0 auto;
+}
 }
 
 
