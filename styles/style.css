@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} 
 body{
   font-family: "Inter", sans-serif;                                    
   font-optical-sizing: auto;
@@ -282,7 +282,11 @@ input, select{
 }
 
 /* extra challeng section style */
-.challeng-section, .handshake{
+.challeng-section{
+    /* display: flex;
+    flex-direction: column; */
+    display: grid;
+    grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -438,6 +442,9 @@ input, select{
     .get-body{
         display: grid;
         grid-template-columns: 1fr;
+        padding: 35px;
+        align-items: center;
+        justify-content: center;
     }
     .get-body-title{
         max-width: 285px;
@@ -510,6 +517,9 @@ input, select{
     display: grid;
     grid-template-columns: 1fr;
     padding: 0 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
 
 }
 .Run-an-Extra-box .Join-btn{
@@ -521,6 +531,7 @@ input, select{
 }
 .run-box-img, img{
     margin-top: 20px;
+    max-width: 100%;
 }
 /* BMI Calculator Responsive */
 .BMI-calculator{
@@ -546,7 +557,7 @@ input, select{
  .images{
     display: grid;
     grid-template-columns: 1fr;
-    width: auto;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0;
  }
