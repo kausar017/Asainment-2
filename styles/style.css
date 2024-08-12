@@ -352,7 +352,7 @@ input, select{
 
  }
  .images{
-    padding: 55px;
+    padding-top: 55px;
     position: relative;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -393,6 +393,11 @@ input, select{
     color: red;
     font-style: italic;
  }
+ .Contact-box{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 152px;
+ }
  .Contact h3{
     color: #fff;
     font-size: 2rem;
@@ -405,6 +410,9 @@ input, select{
     font-size: 1.5rem;
     color: rgba(255, 255, 255, 0.5);
     margin-top: 10px;
+ }
+ .footer-titel p{
+    max-width: 440px;
  }
  .footer-hr{
     max-width: 80%;
