@@ -92,7 +92,6 @@ body{
     padding: 8px 24px;
     border-radius: 40px;
 }
-
 i{
     display: none;
    
@@ -196,7 +195,7 @@ i{
    color:  rgb(255, 255, 255);
 }
 .card p{
-    width: 231px;
+    width: 240px;
 }
 
 
@@ -283,8 +282,6 @@ input, select{
 
 /* extra challeng section style */
 .challeng-section{
-    /* display: flex;
-    flex-direction: column; */
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
@@ -316,6 +313,7 @@ input, select{
 }
 .extra-card img{
     border-radius: 8px;
+    margin-bottom: 20px;
 }
 .extra-card .card{
     max-width: 300px;
@@ -388,7 +386,6 @@ input, select{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* text-align: center; */
  }
  .footer  h1{
     font-size: 78px;
@@ -577,24 +574,11 @@ input, select{
     font-size: 1.5rem;
 }
 }
-
-
 /* midea (small divice) style end */
-
-
-
-
 
 /* midea (mideam divice) style start */
 @media screen and (min-width:577px) and (max-width:992px){
 
-
-    /* body{
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-content: center;
-        align-items: center;
-    } */
 
     .container{
         max-width: 744px;
@@ -602,8 +586,8 @@ input, select{
     }
     /* header respondive style */
     .header{
-        max-width: 90%;
-        padding: 20px 118px;
+       max-width: 100%;
+       margin: 2rem auto;
         
     }
     .navbar-section{
@@ -703,6 +687,39 @@ input, select{
     justify-content: center;
     align-items: center;
 }
+.our-container-section img{
+    width: 199px;
+    height: 272px;
+}
+.images{
+    padding: 0;
+}
 
-    
+ /* Extra challengeing section responsive*/
+
+ .extra-card{
+    max-width: 100%;
+ }
+/* footer section responsive */
+
+.footer{
+   display: grid;
+   grid-template-columns: 1fr;
+}
+.footer h1{
+    margin-top: 100px;
+}
+#discrip{
+    margin: 0;
+    width: 443px;
+    margin-bottom: 100px;
+}
+.Contact-box{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.Contact{
+    line-height: 35px;
+}
+ 
 }
