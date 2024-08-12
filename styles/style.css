@@ -107,16 +107,16 @@ i{
 }
 .get-body-title{
     max-width: 520px;
-    font-size: 78px;
+    font-size: 6rem;
     font-weight: 900;
-    line-height: 40%;
+    line-height: 100%;
     color: rgb(255, 255, 255);
 }
 .miema-font{
     font-family: 'Miama', sans-serif;
-    font-size: 8rem;
+    font-size: 10rem;
     font-weight: 400;
-    line-height: 120%;                                  
+    line-height: 50%;                                  
 }
 .btn-box{
     margin-top: 20px;
@@ -588,13 +588,22 @@ input, select{
 /* midea (mideam divice) style start */
 @media screen and (min-width:577px) and (max-width:992px){
 
+
+    /* body{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+    } */
+
     .container{
-        max-width: 100%;
+        max-width: 744px;
         margin: 1rem auto;
     }
+    /* header respondive style */
     .header{
-      width: 100%;
-      padding: 10px 10px;
+        max-width: 90%;
+        padding: 20px 118px;
         
     }
     .navbar-section{
@@ -605,7 +614,10 @@ input, select{
     i{
         display: none;
     }
-
+/* bannar resposive */
+    .get-body-box{
+        padding: 30px;
+    }
     .get-body-title{
         width: 599.05px;
         height: 282px;
@@ -617,8 +629,9 @@ input, select{
         margin-bottom: 20px;
         letter-spacing: 0%;
     }
-/* bannar resposive */
-
+   .primary-discrption-1{
+    margin: 0;
+   }
 .get-body{
     display: grid;
     grid-template-columns: 1fr;
@@ -629,5 +642,67 @@ input, select{
     grid-template-columns: repeat(2, 1fr);
     row-gap: 35px;
 }
+.get-body-box-2{
+    position: relative;
+    top: 18px;
+    left: 205px;
+    margin-bottom: 110px;
+}
+ /* Run an Extra Mile Easily section responsive */
 
+ .Run-an-Extra{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    column-gap: 57px;
+ }
+ .praiary-font{
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 120%;
+    text-align: left;
+ }
+ .run-box-img img{
+    width: 256px;
+    height: 319px;
+    left: 385px;
+    top: 40px;
+ }
+
+ /* Change Your Habits section responsive */
+ .Habits{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+  /* BMI Calculator section responsiv */
+.BMI-title p{
+    width: 595px;
+    margin: 0;
+}
+.BMI-calculator{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px;
+    margin: 35px;
+}
+.your-BMI{
+    margin-top: 62px;
+}
+.your-BMI p{
+    margin: 0;
+}
+ /* Meet Our Team section start responsive */
+.team-meet{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    
 }
