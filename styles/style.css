@@ -88,7 +88,7 @@ body{
     padding: 0px 20px 0px 0px;
 }
 .option span{
-    background-color: red;
+    background-color: #E6533C;
     padding: 8px 24px;
     border-radius: 40px;
 }
@@ -105,7 +105,7 @@ i{
     background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
 }
 .get-body-title{
-    max-width: 520px;
+    max-width: 80%;
     font-size: 6rem;
     font-weight: 900;
     line-height: 100%;
@@ -162,7 +162,7 @@ i{
     top: -291px;
 }
 .card-2 i{
-    color: red;
+    color: #E6533C;
 }
 .card-1, .card-2 h4{
     font-size: 40px;
@@ -208,12 +208,12 @@ i{
     justify-content: space-between;
 
 }
-.Run-an-Extra-box h1, p{
-    max-width: 500px;
-    margin: 0 auto;
+.Run-an-Extra-box h1{
+    max-width: 55%;
 }
 
 .Run-an-Extra-box p{
+    max-width: 70%;
     color: rgba(255, 255, 255, 0.5);
     font-size: 16px;
     font-weight: 400;
@@ -260,6 +260,9 @@ th, td{
     padding: 1rem;
 
  }
+ td{
+    color: rgba(255, 255, 255, 0.5);
+ }
  .your-BMI p{
    max-width: 570px;
  }
@@ -297,9 +300,9 @@ input, select{
     font-weight: bold;
     font-size: 1rem;
 }
-.handshake h1{
+.handshake h1{ 
     color: #fff;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     max-width: 842px;
     margin: 0 auto;
 }
@@ -331,7 +334,7 @@ input, select{
     font-size: 1rem;
     font-weight: bold;
     margin-bottom: 15px;
-}
+} 
 .extra-card a{
     color: #fff;
     font-size: 1.2rem;
@@ -339,7 +342,7 @@ input, select{
     text-align: left;
 }
 .extra-card a:hover{
-    color: #ff0000;
+    color: #E6533C;
     font-size: 1.5rem;
     text-decoration: none;
     border: 1px solid pink;
@@ -390,7 +393,7 @@ input, select{
  .footer  h1{
     font-size: 78px;
     font-weight: 900;
-    color: red;
+    color: #E6533C;
     font-style: italic;
  }
  .Contact-box{
@@ -476,6 +479,9 @@ input, select{
         line-height: 24px;
         margin-bottom: 28px;
     }
+    .get-body-box .A{
+        margin: 0;
+    }
    .btn-box{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -531,6 +537,9 @@ input, select{
     text-align: center;
     margin-top: 10px;
 }
+.Run-an-Extra h1{
+    max-width: 100%;
+}
 .Join-btn .btn{
    width: 75%;
 }
@@ -583,6 +592,8 @@ input, select{
 }
 }
 /* midea (small divice) style end */
+
+
 
 /* midea (mideam divice) style start */
 @media screen and (min-width:577px) and (max-width:992px){
@@ -650,8 +661,14 @@ input, select{
     padding: 50px;
     column-gap: 57px;
  }
+ .Run-an-Extra-box h1{
+    max-width:100%;
+ }
+ .Run-an-Extra-box p{
+    max-width: 100%;
+ }
  .praiary-font{
-    font-size: 36px;
+    font-size: 48px;
     font-weight: 900;
     line-height: 120%;
     text-align: left;
